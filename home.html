@@ -11,7 +11,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Play|Titillium+Web|Lobster|Ubuntu&display=swap" rel="stylesheet">
   <link href="assets/main.css" rel="stylesheet">
@@ -22,170 +22,181 @@
 </head>
 <body class="f-ubundu">
   <div id="mySidenav" class="sidenav f-ubundu">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="text-center text-light">
-     <img src="assets/images/men.PNG" class="rounded-circle " height="100px" width="100px">
-     <h6 class="text-13 pt-1">Siva Kumar</h6>
-     <h6 class="text-13">SivaKumar@gmail.com</h6>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <!--------profile open--------->
+      <div class="text-center text-light">
+          <img src="assets/images/men.png" class="rounded-circle " height="100px" width="100px">
+          <h6 class="text-13 pt-1">Siva Kumar</h6>
+          <h6 class="text-13">SivaKumar@gmail.com</h6>
+      </div><!--------profile close--------->
+      <!-------- Account Menus open--------->
+      <ul class="nav nav-tabs flex-column text-dark side-mu">
+          <li class="nav-item">
+             <a class="nav-link py-3" href="my-booking.html"><i class="fas fa-book text-warning"></i>&nbsp;&nbsp; My Bookings</a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link py-3" href="#"><i class="fas fa-wallet text-warning"></i>&nbsp;&nbsp; Free Cash</a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link py-3" href="#"><i class="fas fa-comment-dollar text-warning"></i>&nbsp;&nbsp; Refer & Earn</a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link py-3" href="#"><i class="fas fa-phone-square text-warning"></i>&nbsp;&nbsp; Contacts</a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link py-3" href="#"><i class="far fa-star text-warning"></i>&nbsp;&nbsp; Rate Us</a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link py-3" href="#"><i class="fas fa-sign-out-alt text-warning"></i>&nbsp;&nbsp; Logout</a>
+          </li>
+      </ul>
+      <!--------Account Menus close--------->
+      <footer class="text-white side-ft">Version 1.2.0</footer>
   </div>
-  <ul class="nav nav-tabs flex-column text-dark side-mu">
-    <li class="nav-item">
-      <a class="nav-link py-3" href="#"><i class="fas fa-book text-warning"></i>&nbsp;&nbsp; My Bookings</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link py-3" href="#"><i class="fas fa-wallet text-warning"></i>&nbsp;&nbsp; Free Cash</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link py-3" href="#"><i class="fas fa-comment-dollar text-warning"></i>&nbsp;&nbsp; Refer & Earn</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link py-3" href="#"><i class="fas fa-phone-square text-warning"></i>&nbsp;&nbsp; Contacts</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link py-3" href="#"><i class="far fa-star text-warning"></i>&nbsp;&nbsp; Rate Us</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link py-3" href="#"><i class="fas fa-sign-out-alt text-warning"></i>&nbsp;&nbsp; Logout</a>
-    </li>
-  </ul>
-  <footer class="text-white side-ft">Version 1.2.0</footer>
-</div>
-  <nav class="navbar navbar-expand-md bg-darkblue navbar-dark fixed-top">
-  <!-- Brand -->
-  <a class="navbar-brand" href="#" data-toggle="collapse" data-target="#collapsibleNavbar" onclick="openNav()">
-    <i class="fas fa-sliders-h text-light p-1 border border-secondary"></i></a>
-    <a class="text-light ml-auto" href="#"><i class="fas fa-map-marker-alt"></i> Marathahali...</a>
-  <!-- Navbar links -->
-  <!-- <div class="collapse navbar-collapse">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Marathahali...</a>
-      </li>
-    </ul>
-  </div>  -->
+  <!--------Side nav close--------->
 
-</nav>
-<div class="container-fluid mt-6">
-   <div class="row">
-     <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search">
-      <div class="input-group-append">
-        <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button> 
-      </div>
-    </div>
-    <!--------search close----------------->
- </div> 
- </div>  
+  <!--------Main Nav open--------->
+    <nav class="navbar navbar-expand-md bg-darkblue navbar-dark fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#" data-toggle="collapse" data-target="#collapsibleNavbar" onclick="openNav()">
+        <i class="fas fa-sliders-h text-light p-1 border border-secondary"></i></a>
+        <a class="text-light ml-auto" href="#"><i class="fas fa-map-marker-alt"></i> Marathahali...</a>
+        <!-- Navbar links -->
+        <!-- <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+        <a class="nav-link" href="#">Marathahali...</a>
+        </li>
+        </ul>
+        </div>  -->
+    
+    </nav><!--------Main nav close--------->
+
+    <!--------Search open--------->
+    <div class="container-fluid mt-6">
+       <div class="row">
+         <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search">
+          <div class="input-group-append">
+            <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button> 
+          </div>
+        </div>
+     </div> 
+    </div> <!--------Search close---------> 
+ 
+    <!--------Category open--------->
     <div class="container-fluid bg-darkblue text-white">
-    <h6 class="py-1">Select the category to explore...</h6>
-     <div class="row text-center">
-        <div class="col-3">
-            <img src="assets/images/men.PNG" class="rounded-circle" height="50px" width="50px"><br><span class="text-11">MEN</span>
+        <h6 class="py-1">Select the category to explore...</h6>
+        <div class="row text-center">
+            <div class="col-3">
+              <img src="assets/images/men.png" class="rounded-circle" height="50px" width="50px"><br><span class="text-11">MEN</span>
+            </div>
+            <div class="col-3">
+              <img src="assets/images/women.png" class="rounded-circle" height="50px" width="50px"><br><span class="text-11">WOMEN</span>
+            </div>
+            <div class="col-3">
+              <img src="assets/images/unisex.png" class="rounded-circle" height="50px" width="50px"><br><span class="text-11">UNISEX</span>
+            </div>
+            <div class="col-3">
+              <img src="assets/images/spa.png" class="rounded-circle" height="50px" width="50px"><br><span class="text-11">SPA</span>
+            </div>
         </div>
-        <div class="col-3">
-            <img src="assets/images/women.PNG" class="rounded-circle" height="50px" width="50px"><br><span class="text-11">WOMEN</span>
-        </div>
-        <div class="col-3">
-            <img src="assets/images/unisex.PNG" class="rounded-circle" height="50px" width="50px"><br><span class="text-11">UNISEX</span>
-        </div>
-        <div class="col-3">
-            <img src="assets/images/spa.PNG" class="rounded-circle" height="50px" width="50px"><br><span class="text-11">SPA</span>
-        </div>
-    </div>
-   </div>
+    </div><!--------Category close--------->
+
+    <!--------Deal nav open--------->
    <nav class="navbar navbar-expand-sm bg-yellow navbar-dark text-white sticky-top" style="top: 55px;">
       <h6 class="mb-0">Deals & Offers</h6>
-    </nav>
+    </nav><!--------Deal nav close--------->
+
+    <!--------Salon offer list open--------->
    <div class="container-fluid">
      
      <div class="row text-center">
-      <div class="col-6 col-md-4 col-sm-4 col-lg-3 p-1">
-            <div class="card sd">
-                <a class="text-body" href="salon-list.html">
-                <img src="assets/images/shop4.jpg" class="rounded" height="150px" width="100%">
-                <div class = "img-des">Book the Luxurious Experience</div>
-                <div class="card-body p-0">
-                  <p class="card-text p-0 mb-0 text-13 float-right pr-1">Book From Luxury Salon </p>
-                </div></a>
-            </div>
-     </div>
-     <div class="col-6 col-md-4 col-sm-4 col-lg-3 p-1">
-            <div class="card sd">
-                <img src="assets/images/shop2.jpg" class="rounded" height="150px" width="100%">
-                <div class = "img-des">Book from our hand picked salons</div>
-                <div class="card-body p-0">
-                  <p class="card-text p-0 mb-0 text-13 float-right pr-1">Book From Luxury Salon </p>
+          <div class="col-6 col-md-4 col-sm-4 col-lg-3 p-1">
+                <div class="card sd">
+                    <a class="text-body" href="salon-list.html">
+                    <img src="assets/images/shop4.jpg" class="rounded" height="150px" width="100%">
+                    <div class = "img-des">Book the Luxurious Experience</div>
+                    <div class="card-body p-0">
+                      <p class="card-text p-0 mb-0 text-13 float-right pr-1">Book From Luxury Salon </p>
+                    </div></a>
                 </div>
-            </div>
-     </div>
-     <div class="col-6 col-md-4 col-sm-4 col-lg-3 p-1">
-            <div class="card sd">
-                <img src="assets/images/shop3.jpg" class="rounded" height="150px" width="100%">
-                <div class = "img-des">Comfortable salons for Waxing</div>
-                <div class="card-body p-0">
-                  <p class="card-text p-0 mb-0 text-13 float-right pr-1">Book From Luxury Salon </p>
+          </div>
+          <div class="col-6 col-md-4 col-sm-4 col-lg-3 p-1">
+                <div class="card sd">
+                    <img src="assets/images/shop2.jpg" class="rounded" height="150px" width="100%">
+                    <div class = "img-des">Book from our hand picked salons</div>
+                    <div class="card-body p-0">
+                      <p class="card-text p-0 mb-0 text-13 float-right pr-1">Book From Luxury Salon </p>
+                    </div>
                 </div>
-            </div>
-     </div>
-     <div class="col-6 col-md-4 col-sm-4 col-lg-3 p-1">
-            <div class="card sd">
-                <img src="assets/images/shop4.jpg" class="rounded" height="150px" width="100%">
-                <div class = "img-des">Book the Luxurious Experience</div>
-                <div class="card-body p-0">
-                  <p class="card-text p-0 mb-0 text-13 float-right pr-1">Book From Luxury Salon </p>
+          </div>
+          <div class="col-6 col-md-4 col-sm-4 col-lg-3 p-1">
+                <div class="card sd">
+                    <img src="assets/images/shop3.jpg" class="rounded" height="150px" width="100%">
+                    <div class = "img-des">Comfortable salons for Waxing</div>
+                    <div class="card-body p-0">
+                      <p class="card-text p-0 mb-0 text-13 float-right pr-1">Book From Luxury Salon </p>
+                    </div>
                 </div>
-            </div>
-     </div>
-     <div class="col-6 col-md-4 col-sm-4 col-lg-3 p-1">
-            <div class="card sd">
-                <img src="assets/images/shop2.jpg" class="rounded" height="150px" width="100%">
-                <div class = "img-des">Book from our hand picked salons</div>
-                <div class="card-body p-0">
-                  <p class="card-text p-0 mb-0 text-13 float-right pr-1">Book From Luxury Salon </p>
+          </div>
+          <div class="col-6 col-md-4 col-sm-4 col-lg-3 p-1">
+                <div class="card sd">
+                    <img src="assets/images/shop4.jpg" class="rounded" height="150px" width="100%">
+                    <div class = "img-des">Book the Luxurious Experience</div>
+                    <div class="card-body p-0">
+                      <p class="card-text p-0 mb-0 text-13 float-right pr-1">Book From Luxury Salon </p>
+                    </div>
                 </div>
-            </div>
-     </div>
-     <div class="col-6 col-md-4 col-sm-4 col-lg-3 p-1">
-            <div class="card sd">
-                <img src="assets/images/shop3.jpg" class="rounded" height="150px" width="100%">
-                <div class = "img-des">Comfortable salons for Waxing</div>
-                <div class="card-body p-0">
-                  <p class="card-text p-0 mb-0 text-13 float-right pr-1">Book From Luxury Salon </p>
+          </div>
+          <div class="col-6 col-md-4 col-sm-4 col-lg-3 p-1">
+                <div class="card sd">
+                    <img src="assets/images/shop2.jpg" class="rounded" height="150px" width="100%">
+                    <div class = "img-des">Book from our hand picked salons</div>
+                    <div class="card-body p-0">
+                      <p class="card-text p-0 mb-0 text-13 float-right pr-1">Book From Luxury Salon </p>
+                    </div>
                 </div>
-            </div>
-     </div>
-     <div class="col-6 col-md-4 col-sm-4 col-lg-3 p-1">
-            <div class="card sd">
-                <img src="assets/images/shop4.jpg" class="rounded" height="150px" width="100%">
-                <div class = "img-des">Book the Luxurious Experience</div>
-                <div class="card-body p-0">
-                  <p class="card-text p-0 mb-0 text-13 float-right pr-1">Book From Luxury Salon </p>
+          </div>
+          <div class="col-6 col-md-4 col-sm-4 col-lg-3 p-1">
+                <div class="card sd">
+                    <img src="assets/images/shop3.jpg" class="rounded" height="150px" width="100%">
+                    <div class = "img-des">Comfortable salons for Waxing</div>
+                    <div class="card-body p-0">
+                      <p class="card-text p-0 mb-0 text-13 float-right pr-1">Book From Luxury Salon </p>
+                    </div>
                 </div>
-            </div>
-     </div>
-     <div class="col-6 col-md-4 col-sm-4 col-lg-3 p-1">
-            <div class="card sd">
-                <img src="assets/images/shop2.jpg" class="rounded" height="150px" width="100%">
-                <div class = "img-des">Book from our hand picked salons</div>
-                <div class="card-body p-0">
-                  <p class="card-text p-0 mb-0 text-13 float-right pr-1">Book From Luxury Salon </p>
+          </div>
+          <div class="col-6 col-md-4 col-sm-4 col-lg-3 p-1">
+                <div class="card sd">
+                    <img src="assets/images/shop4.jpg" class="rounded" height="150px" width="100%">
+                    <div class = "img-des">Book the Luxurious Experience</div>
+                    <div class="card-body p-0">
+                      <p class="card-text p-0 mb-0 text-13 float-right pr-1">Book From Luxury Salon </p>
+                    </div>
                 </div>
-            </div>
-     </div>
-     <div class="col-6 col-md-4 col-sm-4 col-lg-3 p-1">
-            <div class="card sd">
-                <img src="assets/images/shop3.jpg" class="rounded" height="150px" width="100%">
-                <div class = "img-des">Comfortable salons for Waxing</div>
-                <div class="card-body p-0">
-                  <p class="card-text p-0 mb-0 text-13 float-right pr-1">Book From Luxury Salon </p>
+          </div>
+          <div class="col-6 col-md-4 col-sm-4 col-lg-3 p-1">
+                <div class="card sd">
+                    <img src="assets/images/shop2.jpg" class="rounded" height="150px" width="100%">
+                    <div class = "img-des">Book from our hand picked salons</div>
+                    <div class="card-body p-0">
+                      <p class="card-text p-0 mb-0 text-13 float-right pr-1">Book From Luxury Salon </p>
+                    </div>
                 </div>
-            </div>
-     </div>
-     
+          </div>
+          <div class="col-6 col-md-4 col-sm-4 col-lg-3 p-1">
+                <div class="card sd">
+                    <img src="assets/images/shop3.jpg" class="rounded" height="150px" width="100%">
+                    <div class = "img-des">Comfortable salons for Waxing</div>
+                    <div class="card-body p-0">
+                      <p class="card-text p-0 mb-0 text-13 float-right pr-1">Book From Luxury Salon </p>
+                    </div>
+                </div>
+          </div>
 
-      
-    </div>
-   </div>
+       </div>
+   </div><!--------Salon offer list close--------->
    
 
 <script>
