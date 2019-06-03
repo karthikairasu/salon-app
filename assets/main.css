@@ -1,0 +1,96 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999 !important;
+  top: 0;
+  left: 0;
+  background-color: #010626;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav ul li a:hover {
+  color: #e93a3a;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+ .text-13{
+    font-size:13px;
+ }
+ .text-11{
+    font-size:11px;
+ }
+ .f-ubundu{
+    font-family: 'Ubuntu', sans-serif;
+ }
+ .bg-black{
+    background-color: black;
+ }
+ .bg-darkblue{
+    background-color: #0c1d39;
+ }
+ .bg-yellow{
+    background-color: #f58d1e
+ }
+ .side-mu .nav-item .nav-link{
+    color: black;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+.side-ft{
+    bottom: 0px;
+    position: absolute;
+    left: 74px;
+}
+.mt-6{
+    margin-top:57px; 
+}
+.border-2{
+    border-width:5px!important;
+}
+.sd{
+  box-shadow: 0px 0px 2px 0 rgba(0, 0, 0, 0.2), 0px 0px 2px 0 rgba(0, 0, 0, 0.19); 
+  border:0px;
+  position: relative;
+}
+.sd:hover {
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+  transition: box-shadow 0.3s ease-in-out;
+  transform: scale(0.95, 0.95);
+
+}
+.img-des{
+    position: absolute;
+    bottom: 19px;
+    left: 0;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 2px 2px 0px 0px;
+    min-height: 40px;
+    background-color: #001827;
+    color:white;
+    font-family: 'Lobster', cursive;
+}
