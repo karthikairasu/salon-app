@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hair Shop</title>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#0c1d39">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0">
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="194x194">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Play|Titillium+Web|Lobster|Ubuntu&display=swap" rel="stylesheet">
+  <link href="assets/main.css" rel="stylesheet">
+  <link rel="manifest" href="assets/manifest.json">
+  <style>
+
+  </style>
+</head>
+<body class="f-ubundu" onload="geoloc()">
+   
+   <nav class="navbar navbar-expand-md bg-darkblue navbar-dark text-white fixed-top">
+     <div class="col-3"><a href="home.html" class="navbar-brand"><i class="far fa-hand-point-left"></i></a></div>
+     <div class="col-6">
+      <h6 class="mb-0 text-center ">The Alavana Salon</h6>
+    </div>
+    <div class="col-3"></div>
+    </nav>
+    <div class="container-fluid mt-6">
+      <div class="row">
+        <div class="col-md col-sm"></div>
+          <div class="card">
+            <img src="assets/images/salon-list/s1.PNG" class="rounded" width="100%" height="150px">
+            <div class="card-body p-1">
+             <span class="text-13 pl-2 py-1">
+               <img src="assets/images/star.png" class="" height="14px" width="14px" style="vertical-align: text-top;"> 
+               <img src="assets/images/star.png" class="" height="14px" width="14px" style="vertical-align: text-top;"> 
+               <img src="assets/images/star.png" class="" height="14px" width="14px" style="vertical-align: text-top;"> 
+               <img src="assets/images/star 2.png" class="" height="14px" width="14px" style="vertical-align: text-top;"> 
+               <img src="assets/images/star 2.png" class="" height="14px" width="14px" style="vertical-align: text-top;">
+              </span>
+
+              <i class="text-13 text-muted pt-1">2.91 (11 Ratings)</i>
+              <p class="px-2 pb-2 mb-0 b-bottom" style="line-height:normal">
+                2nd floor, Malhaar Mega Mall, A.B.Road, Indore, India.</p> 
+              <div class="row mx-0 text-13">
+                <div class="col-6 text-center text-muted p-2">
+                 <i class="far fa-clock"></i> Opening Time <br>
+                 11:00 Am-8.30 PM
+                </div>
+                <div class="col-6 text-center text-muted p-2">
+                  <i class="fas fa-location-arrow"></i> Distance <br>
+                 1,467 km away
+                </div>
+              </div><!----------row close------------>
+                
+               <div id="mapdiv" style="height:150px;min-width:300px;"></div>
+
+              <div class="row mx-0 pb-5 text-13">
+                <div class="col-12 b-bottom p-2"><h5>Amenities</h5></div>
+                <div class="col-3 text-center py-2"><i class="fas fa-wifi"></i><br>Wifi</div>
+                <div class="col-3 text-center py-2"><i class="fas fa-car-side"></i><br>Parking</div>
+                <div class="col-3 text-center py-2"><i class="fas fa-wind"></i><br>AC</div>
+                <div class="col-3 text-center py-2"><i class="fas fa-tv"></i><br>TV</div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md col-sm"></div>
+      </div>
+      <!-- <div class="row b-bottom">
+        <span class="mt-0">
+          <img src="assets/images/salon-list/s1.PNG" class="rounded" width="100%" height="150px">
+        </span>
+        <span class="text-13 pl-2 py-1">
+         <img src="assets/images/star.png" class="" height="14px" width="14px" style="vertical-align: text-top;"> 
+         <img src="assets/images/star.png" class="" height="14px" width="14px" style="vertical-align: text-top;"> 
+         <img src="assets/images/star.png" class="" height="14px" width="14px" style="vertical-align: text-top;"> 
+         <img src="assets/images/star 2.png" class="" height="14px" width="14px" style="vertical-align: text-top;"> 
+         <img src="assets/images/star 2.png" class="" height="14px" width="14px" style="vertical-align: text-top;">
+        </span>
+
+        <i class="text-13 text-muted pt-1">2.91 (11 Ratings)</i>
+        <p class="px-2 mb-2" style="line-height:normal">
+          2nd floor, Malhaar Mega Mall, A.B.Road, Indore, India.</p>
+      </div>
+      <div class="row">
+        <div class="col-6 text-center text-muted p-2">
+         <i class="far fa-clock"></i> Opening Time <br>
+         11:00 Am-8.30 PM
+        </div>
+        <div class="col-6 text-center text-muted p-2">
+          <i class="fas fa-location-arrow"></i> Distance <br>
+         1,467 km away
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d409.7635819605706!2d75.8943020680991!3d22.74486743310175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd541f1e07b9%3A0x21fe1d0bf9fd5f48!2sMalhar+Mega+Mall!5e0!3m2!1sen!2sin!4v1559739936752!5m2!1sen!2sin" width="100%" height="180" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="row pb-5">
+        <div class="col-12 b-bottom p-2">Amenities</div>
+        <div class="col-3 text-center"><i class="fas fa-wifi"></i><br>Wifi</div>
+        <div class="col-3 text-center"><i class="fas fa-car-side"></i><br>Parking</div>
+        <div class="col-3 text-center"><i class="fas fa-wind"></i><br>AC</div>
+        <div class="col-3 text-center"><i class="fas fa-tv"></i><br>TV</div>
+        
+      </div> -->
+      <button class="btn btn-lg bg-darkblue fixed-bottom text-white btn-block" onclick="window.location.href='appointment.html'">Book an Offer</button>
+    </div>
+   
+<script>
+  var watchId = null;
+  function geoloc() {
+  if (navigator.geolocation) {
+    var optn = {
+        enableHighAccuracy : true,
+        timeout : Infinity,
+        maximumAge : 0
+    };
+  watchId = navigator.geolocation.watchPosition(showPosition, showError, optn);
+  } else {
+      alert('Geolocation is not supported in your browser');
+  }
+  }
+
+function showPosition(position) {
+    var googlePos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+    var mapOptions = {
+      zoom : 12,
+      center : googlePos,
+      mapTypeId : google.maps.MapTypeId.ROADMAP
+    };
+    var mapObj = document.getElementById('mapdiv');
+    var googleMap = new google.maps.Map(mapObj, mapOptions);
+    var markerOpt = {
+      map : googleMap,
+      position : googlePos,
+      title : 'Hi , I am here',
+      animation : google.maps.Animation.DROP
+    };
+    var googleMarker = new google.maps.Marker(markerOpt);
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({
+      'latLng' : googlePos
+      }, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+        if (results[1]) {
+          var popOpts = {
+            content : results[1].formatted_address,
+            position : googlePos
+          };
+        var popup = new google.maps.InfoWindow(popOpts);
+        google.maps.event.addListener(googleMarker, 'click', function() {
+        popup.open(googleMap);
+      });
+        } else {
+          alert('No results found');
+        }
+        } else {
+          alert('Geocoder failed due to: ' + status);
+        }
+      });
+      }
+
+      function stopWatch() {
+        if (watchId) {
+          navigator.geolocation.clearWatch(watchId);
+          watchId = null;
+
+        }
+      }
+
+    function showError(error) {
+    var err = document.getElementById('mapdiv');
+    switch(error.code) {
+    case error.PERMISSION_DENIED:
+    err.innerHTML = "User denied the request for Geolocation."
+    break;
+    case error.POSITION_UNAVAILABLE:
+    err.innerHTML = "Location information is unavailable."
+    break;
+    case error.TIMEOUT:
+    err.innerHTML = "The request to get user location timed out."
+    break;
+    case error.UNKNOWN_ERROR:
+    err.innerHTML = "An unknown error occurred."
+    break;
+    }
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDidKGjHVKSzG0la9YbX33bfBqH7e_9HTw&libraries&callback=initMap"
+    async defer></script>   
+</body>
+</html>
