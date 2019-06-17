@@ -30,11 +30,32 @@
     <div class="col-3 text-right"><h5 class="mb-0"><a class="text-white" href="home.html"><i class="fas fa-home"></i></a></h5></div>
     </nav>
     <div class="container-fluid mt-6 px-0">
-         <h4 class="text-center p-3 bg-light mb-0">
-            <i class="fas fa-caret-left"></i>&emsp; 10-Jun-2019 &emsp; 
-            <i class="fas fa-caret-right"></i>
-         </h4>
-         <div id="accordion">
+         <h6 class="text-center p-3 bg-grey mb-0">
+            Select a Date and Time
+         </h6>
+         
+         <div class="row mx-2">
+          <div class="col-12">
+            <form action="payment.html" method="POST">
+               <div class="form-group">
+                  <label>Date</label>
+                  <input type="date" class="form-control" Placeholder="Select a date" required/>
+                </div>
+                <div class="form-group">
+                  <label>Time</label>
+                  <input type="time" class="form-control" Placeholder="Select a Timing" required/>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-lg btn-block text-white bg-darkblue">Book a Time</button>
+                </div>
+            </form>  
+          </div>
+        </div>
+
+
+
+
+         <!-- <div id="accordion">
 
             <div class="card"> 
               <div class="card-header text-center">
@@ -65,7 +86,7 @@
             <div class="card">
               <div class="card-header text-center">
                 <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                   <img src="assets/images/Sunny.png" width="30px" height="30px"> 12 PM - 03 PM
+                   <img src="assets/images/sunny.png" width="30px" height="30px"> 12 PM - 03 PM
                 </a>
               </div>
               <div id="collapseTwo" class="collapse" data-parent="#accordion">
@@ -140,7 +161,7 @@
               </div>
             </div>
 
-          </div>
+          </div> -->
 
     </div>
    
