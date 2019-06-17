@@ -226,7 +226,7 @@ input[type=checkbox] + label {
   cursor: pointer;
   padding: 2px;
 }
-input[type=checkbox] {
+.c_align input[type=checkbox] {
   display: none;
 }
 input[type=checkbox] + label:before {
